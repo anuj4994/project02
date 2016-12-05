@@ -5,7 +5,7 @@ create datbase cloud;
 
 use cloud;
 
-In that I have created tabel named cat
+In that I have created table named cat
 
 CREATE TABLE `cat` (
   `workId` varchar(255) DEFAULT NULL,
@@ -19,7 +19,7 @@ To populate data from text file I have downloaded file and stored it in followin
 
 /home/cat.txt
 
-LOAD DATA INFILE '/hoke/cat.txt' INTO TABLE cat;
+LOAD DATA INFILE '/home/cat.txt' INTO TABLE cat;
 
 After that run the project02.py file and go to following address
 
@@ -33,6 +33,7 @@ This gives the output in json format
 for 2nd webservice 
 
 http://54.70.113.238:5001/search/Homeless
+(where Homeless is the search keyword)
 
 output: 
 {"works": ["http://54.70.113.238:5001/work/OL509209W", "http://54.70.113.238:5001/work/OL4134102W", "http://54.70.113.238:5001/work/OL1633998W", "http://54.70.113.238:5001/work/OL4966066W", "http://54.70.113.238:5001/work/OL17311133W", "http://54.70.113.238:5001/work/OL15440006W", "http://54.70.113.238:5001/work/OL509195W"]}
